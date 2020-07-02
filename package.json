@@ -4,6 +4,7 @@
   "description": "Restaurant Website",
   "main": "index.js",
   "scripts": {
+    "lite": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
