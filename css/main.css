@@ -1,19 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 html{
     scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 400px) {
+   *{
+       text-align: center;
+   }
+}
+
 body{
-    background: rgb(42, 44, 47);
+    background: #25222C;
     color:white ;
-    font-family: sans-serif;
+    font-family: 'Domine', serif;
 }
 
 .header{
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
+@media screen and (max-width: 400px) {
+    .header{
+        margin-top: 3rem;
+    }
+ }
 .jumbotron{
     background-image: url('../images/header_back.jpg');
     background-repeat: no-repeat;
@@ -27,7 +37,7 @@ body{
     display: block;
     width:100%;
     height: 100%;
-    background-color: rgb(42, 44, 47);
+    background-color: #25222C;
     position: absolute;
     left: 0;
     top: 0;
@@ -38,30 +48,46 @@ body{
     z-index: 10;
     position: relative;
 }
+
+
+.navbar{
+    background-color: rgba(70,65,73, 0.7);
+}
+
 .nav-link{
     color: white;
     font-weight: 300;
+    transition: all 0.3s;
 }
+.nav-link:hover{
+    color: white;
+    opacity: 0.6;
+}
+
 .navbar-toggler{
     z-index: 10;
     position: relative;
     color: white;
 }
 header h1 {
-    font-size: 4rem;
+    font-size: calc(1rem + 5vw);
     font-weight: 100;
-    color:orange;
+    color:#EE9E1D;
 
 }
-.btn{
-    background-color: orange;
+.jumbotron .btn{
+    background-color: #EE9E1D;
     padding: 1rem;
     color: white;
 }
-.jumbotron a{
-    font-weight: 200;
+
+.btn{
+    transition: all 0.3s;
 }
 
+.btn:hover{
+    opacity: 0.6;
+}
 
 header p {
     color:white
@@ -78,19 +104,15 @@ header p {
     margin-bottom: 8rem;
 }
 
-.about h1{
-    font-size: 4rem;
-    margin-bottom: 2rem;
+@media screen and (max-width: 780px) {
+
+    .blog img{
+        display: none;
+    }
 }
-.about p{
-    font-size: 2rem;
-}
-
-
-
 /*BLOG*/
 .blog{
-    background-color: orange;
+    background-color: #EE9E1D;
     position: relative;
 }
 
@@ -124,18 +146,16 @@ header p {
     background-image: url('../images/offer_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    align-items: center;
+    
 }
 
-.offers .container {
-    background-color:rgb(42, 44, 47) ;
-    position: absolute;
-    width: auto;
+.offers .box {
+    background-color:#25222C ;
+    box-sizing: border-box;
     padding: 2rem 2rem;
-    top:50%;
-    left:65%;
-    transform: translate(-50%,-50%);
-    border: 1rem solid orange;
+    border: 1rem solid #EE9E1D;
     border-radius: 1rem;
 }
 
@@ -143,31 +163,37 @@ header p {
 
 .menu{
     margin-top: 8rem;
-    margin-bottom: 8rem;
     width: 100%;
     height: 100%;
 }
 
 .menu h2 , .menu h3 {
-    color:orange;
+    color:#EE9E1D;
 }
 
 /*SERVICES*/
 .services{
-    background-color: orange;
-    height: 50vh;
-    position: relative;
+    height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    
 }
+.inner-service{
+    background-color: #EE9E1D;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+.services .row{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 780px) {
 
-.services img{
-    position: absolute;
-    top: -11rem;
-    left:-6rem;
-    width: 800px;  
+    .services img{
+        display: none;
+    }
+
 }
 
 /*FOOTER*/
@@ -175,15 +201,25 @@ header p {
 .contact{
     width: 100%;
     height: 100%;
-    margin-top: 8rem;
     margin-bottom: 8rem;
 }
 
 .contact .nav{
     margin-top: 2rem;
-}
 
+}
+.contact .nav a{
+    transition: all 0.3s;
+}
 .contact .links i{
     margin-top: 1rem;
     color:white;
+    transition: all 0.3s;
 }
+
+.contact .links i:hover{
+    opacity: 0.6;
+    transform: translateY(0.5rem);
+}
+
+

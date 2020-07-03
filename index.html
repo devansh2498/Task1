@@ -5,7 +5,7 @@
     <title>Food Lover Restaurant</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!--External Css links-->
@@ -19,9 +19,11 @@
 
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
-                <span class="fa fa-hamburger"></span>
+            <button type="button" class="btn navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="fa fa-bars"></span>
             </button>
+            <a href="#" class="navbar-brand"><img src="./images/logo.png" class="img-fluid" alt="Brand" width="100"
+                height="100"></a>
 
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
@@ -31,8 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="#offers">OFFERS</a></li>
                 </ul>
             </div>
-            <a href="#" class="navbar-brand"><img src="./images/logo.png" class="img-fluid" alt="Brand" width="100"
-                height="100"></a>
+
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
@@ -69,7 +70,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <h1>About Us</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptatibus ex debitis aliquid sed porro omnis, numquam quaerat animi pariatur,
                         sint quia id accusamus autem, nesciunt dicta. Fuga alias optio aliquam.</p>
                 </div>
@@ -81,7 +82,7 @@
     <section class="blog" id="blog">
         <div class="upper-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="rgb(42, 44, 47)" fill-opacity="1"
+                <path fill="#25222C" fill-opacity="1"
                     d="M0,64L48,74.7C96,85,192,107,288,96C384,85,480,43,576,64C672,85,768,171,864,208C960,
                     245,1056,235,1152,202.7C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,
                     1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
@@ -105,7 +106,7 @@
         <div class="second-img">
             <img class="img-fluid rounded-circle" src="./images/about_img.jpg" width="40%" >
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(42, 44, 47)" fill-opacity="1" 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#25222C" fill-opacity="1" 
             d="M0,64L48,74.7C96,85,192,107,288,96C384,85,480,43,576,64C672,85,768,171,864,208C960,245,1056,235,1152,202.7C1248,
             171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,
             576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -148,11 +149,17 @@
     <!--OFFERS-->
     <section class="offers" id="offers">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-12 text-center">
-                    <h1>Enjoy Our Food</h1>
-                    <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                        language ocean. A small river named Duden flows by their place and supplies</p>
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-6">
+                    <div class="box container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-12 text-center">
+                                <h1>Enjoy Our Food</h1>
+                                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                                    language ocean. A small river named Duden flows by their place and supplies</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,16 +205,18 @@
 
     <!--SERVICES-->
     <section class="services" id="services">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <img class="img-fluid" src="./images/service_img.png" >
-                </div>
-                <div class="s-text col-6">
-                    <h1>Enjoy Best Meal</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Dignissimos dicta dolor, necessitatibus quos, delectus libero laudantium blanditiis
-                         nesciunt iure earum assumenda. Tempore id error eos delectus perferendis, aperiam in veritatis.</p>
+        <div class="inner-service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="./images/service_img.png" >
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h1>Enjoy Best Meal</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Dignissimos dicta dolor, necessitatibus quos, delectus libero laudantium blanditiis
+                             nesciunt iure earum assumenda. Tempore id error eos delectus perferendis, aperiam in veritatis.</p>
+                    </div>
                 </div>
             </div>
         </div>
