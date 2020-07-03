@@ -5,13 +5,14 @@ html{
 }
 
 body{
-    background: rgb(54, 54, 54);
+    background: rgb(42, 44, 47);
     color:white ;
-    font-family: 'Holtwood One SC', serif;
+    font-family: sans-serif;
 }
 
 .header{
-    margin-top: 9rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 .jumbotron{
     background-image: url('../images/header_back.jpg');
@@ -19,14 +20,14 @@ body{
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .jumbotron::after{
     content:"";
     display: block;
     width:100%;
     height: 100%;
-    background-color: rgb(78, 77, 77);
+    background-color: rgb(42, 44, 47);
     position: absolute;
     left: 0;
     top: 0;
@@ -39,6 +40,7 @@ body{
 }
 .nav-link{
     color: white;
+    font-weight: 300;
 }
 .navbar-toggler{
     z-index: 10;
@@ -46,29 +48,142 @@ body{
     color: white;
 }
 header h1 {
-    font-size: 3.4rem;
+    font-size: 4rem;
     font-weight: 100;
-    color:orange
+    color:orange;
+
 }
+.btn{
+    background-color: orange;
+    padding: 1rem;
+    color: white;
+}
+.jumbotron a{
+    font-weight: 200;
+}
+
+
 header p {
     color:white
 }
 
 /*Main Section*/
-.main{
-    background-color: grey;
-    top: 0;
+
+/*ABOUT US*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.about h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.about p{
+    font-size: 2rem;
 }
 
 
 
+/*BLOG*/
+.blog{
+    background-color: orange;
+    position: relative;
+}
+
+.blog .hero-img{
+    position: absolute;
+    right: 5rem;
+    top: 16rem;
+}
+.blog .second-img{
+    position: absolute;
+    bottom: -1rem;
+    left:27rem
+}
+
+
+
+/*GALLERY*/
+.gallery{
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*OFFERS*/
+.offers{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/offer_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.offers .container {
+    background-color:rgb(42, 44, 47) ;
+    position: absolute;
+    width: auto;
+    padding: 2rem 2rem;
+    top:50%;
+    left:65%;
+    transform: translate(-50%,-50%);
+    border: 1rem solid orange;
+    border-radius: 1rem;
+}
+
+/*MENU*/
+
 .menu{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    width: 100%;
+    height: 100%;
+}
+
+.menu h2 , .menu h3 {
+    color:orange;
+}
+
+/*SERVICES*/
+.services{
+    background-color: orange;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.services img{
+    position: absolute;
+    top: -11rem;
+    left:-6rem;
+    width: 800px;  
 }
 
 /*FOOTER*/
+
 .contact{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.contact .nav{
+    margin-top: 2rem;
+}
+
+.contact .links i{
+    margin-top: 1rem;
+    color:white;
 }

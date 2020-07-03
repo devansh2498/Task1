@@ -20,10 +20,9 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
-                <span>1341</span>
+                <span class="fa fa-hamburger"></span>
             </button>
-            <a href="#" class="navbar-brand"><img src="./images/logo.png" class="img-fluid" alt="Brand" width="100"
-                    height="100"></a>
+
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
@@ -32,6 +31,8 @@
                     <li class="nav-item"><a class="nav-link" href="#offers">OFFERS</a></li>
                 </ul>
             </div>
+            <a href="#" class="navbar-brand"><img src="./images/logo.png" class="img-fluid" alt="Brand" width="100"
+                height="100"></a>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
@@ -43,16 +44,17 @@
     </nav>
 
     <!--HEADER-->
-    <header class="jumbotron">
+    <header class="jumbotron" id="jumbotron">
         <div class="container header">
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <img class="img-fluid" src="./images/header_img.png" alt="logo">
                 </div>
                 <div class="col-12 col-sm-6">
-                    <h1>Contact us for best breakfast</h1>
+                    <h1>Contact us For Best Breakfast</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion
                         experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <a type="button" class="btn" href="#contact">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -62,8 +64,8 @@
     <section class="about" id="about">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-4">
-                    <img alt="image" class="img-fluid" src="./images/header_img.png">
+                <div class="col-12 col-md-6">
+                    <img alt="image" class="img-fluid" src="./images/about_img.jpg">
                 </div>
                 <div class="col-12 col-md-6">
                     <h1>About Us</h1>
@@ -75,26 +77,41 @@
         </div>
     </section>
 
-    <!--info-->
+    <!--BLOG-->
     <section class="blog" id="blog">
-        <div class="container py-5 my-5">
-            <div class="row text-left py-5">
-                <div class="col-12 col-sm-10 m-auto ml-md-5 col-md-8 col-lg-6">
-                    <div class="fdb-box">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-xl-8 text-center">
-                                <h1>Our Food Quality</h1>
-                                <p class="lead">When she reached the first hills of the Italic Mountains, she had a last
-                                    view back on the skyline of her hometown Bookmarksgrove</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="upper-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="rgb(42, 44, 47)" fill-opacity="1"
+                    d="M0,64L48,74.7C96,85,192,107,288,96C384,85,480,43,576,64C672,85,768,171,864,208C960,
+                    245,1056,235,1152,202.7C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,
+                    1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+        <div class="blog-text container">
+            <div class="row">
+                <div class="offset-md-1 col-md-5">
+                    <h1>Our Food Quality</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam assumenda neque voluptate provident reprehenderit autem obcaecati similique 
+                        quod fugit beatae omnis repudiandae laborum voluptatem possimus eaque vero iure dolore minus doloremque aliquam, natus, dignissimos 
+                        nesciunt! Eligendi voluptate labore, laudantium qui doloribus impedit. Velit, nostrum! Beatae sit adipisci,
+                         labore quaerat laborum doloremque debitis. Quos ea sed nemo, illo veniam reiciendis aspernatur.</p>
                 </div>
             </div>
         </div>
+        <div class="hero-img">
+            <img class="img-fluid rounded-circle" src="./images/about_img.jpg" width="80%" >
+        </div>
+        <div class="second-img">
+            <img class="img-fluid rounded-circle" src="./images/about_img.jpg" width="40%" >
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(42, 44, 47)" fill-opacity="1" 
+            d="M0,64L48,74.7C96,85,192,107,288,96C384,85,480,43,576,64C672,85,768,171,864,208C960,245,1056,235,1152,202.7C1248,
+            171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,
+            576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <!--Gallery-->
+    <!--GALLERY-->
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="row text-center justify-content-center">
@@ -104,35 +121,35 @@
             </div>
 
             <div class="row text-center mt-5">
-                <div class="col-4 mb-5">
-                    <img alt="image" class="img-fluid" src="./images/header_back.jpg">
+                <div class="col-6 col-md-4 mb-5">
+                    <img alt="image" class="img-fluid" src="./images/g1.jpg">
                 </div>
 
-                <div class="col-4">
-                    <img alt="image" class="img-fluid" src="/images/header_back.jpg">
+                <div class="col-6 col-md-4 mb-5">
+                    <img alt="image" class="img-fluid" src="/images/g2.jpg">
                 </div>
 
-                <div class="col-4">
-                    <img alt="image" class="img-fluid" src="/images/header_back.jpg">
+                <div class="col-6 col-md-4 mb-5">
+                    <img alt="image" class="img-fluid" src="/images/g3.jpg">
                 </div>
-                <div class="col-4">
-                    <img alt="image" class="img-fluid" src="/images/header_back.jpg">
+                <div class="col-6 col-md-4 mb-5">
+                    <img alt="image" class="img-fluid" src="/images/g4.jpg"> 
                 </div>
-                <div class="col-4">
-                    <img alt="image" class="img-fluid" src="/images/header_back.jpg">
+                <div class="col-6 col-md-4 mb-5">
+                    <img alt="image" class="img-fluid" src="/images/g5.jpg">
                 </div>
-                <div class="col-4 mb-5">
-                    <img alt="image" class="img-fluid" src="/images/header_back.jpg">
+                <div class="col-6 col-md-4 mb-5">
+                    <img alt="image" class="img-fluid" src="/images/g6.jpg">
                 </div>
             </div>
         </div>
     </section>
 
-    <!--sdfee-->
+    <!--OFFERS-->
     <section class="offers" id="offers">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 col-xl-6 text-center">
+                <div class="col-6 col-md-12 text-center">
                     <h1>Enjoy Our Food</h1>
                     <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
                         language ocean. A small river named Duden flows by their place and supplies</p>
@@ -142,7 +159,7 @@
     </section>
 
 
-    <!--Menu-->
+    <!--MENU-->
     <section class="menu" id="menu">
         <div class="container">
             <div class="row text-center">
@@ -152,29 +169,51 @@
             </div>
 
             <div class="row mt-5 align-items-top">
-                <div class="col-12 col-md-8 m-auto col-lg-4 text-center">
-                    <img alt="image" class="img-fluid" src="./images/header_back.jpg">
-                    <h2><strong>ITALIAN MUSHROOM</strong></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, magni at? Modi sed porro beatae obcaecati aspernatur explicabo harum at?</p>
+                <div class="col-12 col-md-8 m-auto col-lg-4">
+                    <img alt="image" class="mb-4 img-fluid" src="./images/m1.jpg">
+                    <h2><strong>SPANSKOPITA</strong></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, magni at? Modi sed porro beatae
+                        obcaecati aspernatur explicabo harum at?</p>
                     <h3>Price : 1.99$</h3>
                 </div>
 
-                <div class="col-12 col-md-8 col-lg-4 text-center m-auto pt-5 pt-lg-0">
-                    <img alt="image" class="img-fluid" src="./images/header_back.jpg">
-                    <h2><strong>ITALIAN MUSHROOM</strong></h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium officia ullam possimus quam ex inventore quo repellat est tenetur.</p>
-                    <h3>Price : 1.99$</h3>
+                <div class="col-12 col-md-8 col-lg-4 m-auto pt-5 pt-lg-0">
+                    <img alt="image" class="mb-4 img-fluid" src="./images/m2.jpg">
+                    <h2><strong>SALAD</strong></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium officia ullam possimus
+                        quam ex inventore quo repellat est tenetur.</p>
+                    <h3>Price : 2.99$</h3>
                 </div>
 
-                <div class="col-12 col-md-8 m-auto col-lg-4 text-center pt-5 pt-lg-0">
-                    <img alt="image" class="img-fluid" src="./images/header_back.jpg">
+                <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
+                    <img alt="image" class="mb-4 img-fluid" src="./images/m3.jpg">
                     <h2><strong>ITALIAN MUSHROOM</strong></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi maxime libero commodi sequi expedita recusandae perspiciatis nesciunt iure dignissimos?</p>
-                    <h3>Price : 1.99$</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi maxime libero commodi sequi
+                        expedita recusandae perspiciatis nesciunt iure dignissimos?</p>
+                    <h3>Price : 2.49$</h3>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--SERVICES-->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <img class="img-fluid" src="./images/service_img.png" >
+                </div>
+                <div class="s-text col-6">
+                    <h1>Enjoy Best Meal</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Dignissimos dicta dolor, necessitatibus quos, delectus libero laudantium blanditiis
+                         nesciunt iure earum assumenda. Tempore id error eos delectus perferendis, aperiam in veritatis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
 
     <footer class="contact" id="contact">
         <div class="container">
@@ -184,22 +223,22 @@
 
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">HOME</a>
+                            <a class="nav-link active" href="#jumbotron">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">ABOUT US</a>
+                            <a class="nav-link " href="#about">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FOODS</a>
+                            <a class="nav-link" href="#gallery">FOODS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">LOCATION</a>
+                            <a class="nav-link" href="#contact">LOCATION</a>
                         </li>
                     </ul>
 
